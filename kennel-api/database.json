@@ -28,5 +28,66 @@
             "squareFootage":7500,
             "HandicapAccessiblity": true 
           }
+        ],
+        "products": [
+          {
+            "id": 1,
+            "name": "caramel pie candy",
+            "productTypeId":1
+          },
+          {
+            "id": 2,
+            "name":"chocolate bar",
+            "productTypeId":2
+          },
+          {
+            "id": 3,
+            "name": "gummy bears",
+            "productTypeId":3
+          }
+
+        ],
+        "employees": [
+            {
+                "id": 1,
+                "name": "Jeremy Bakker",
+                "locationId": 2
+              },
+              {
+                "id": 2,
+                "name": "Jason Bourne",
+                "locationId": 3
+              },
+              {
+                "id": 3,
+                "name": "Marie Curie",
+                "locationId": 1
+              },
+              {
+                "id": 4,
+                "name": "Nikola Tesla",
+                "locationId": 4
+              }
+        ],
+        "productTypes": [
+            {
+                "id": 1,
+                "name": "caramel"
+              },
+              {
+                "id": 2,
+                "name":"chocolate"
+              },
+              {
+                "id": 3,
+                "name": "gummies"
+              }
+        ],
+        "customers":[
+            {
+                "id": 1,
+                "firstName": "Aki"
+            }
+
         ]
     }
