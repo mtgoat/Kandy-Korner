@@ -1,0 +1,32 @@
+{
+    "locations": [
+        {
+          "id": 1,
+          "name": "Nashville North",
+          "address": "8422 Johnson Pike",
+          "squareFootage":8000,
+          "HandicapAccessiblity": true 
+        },
+        {
+          "id": 2,
+          "name": "Nashville South",
+          "address": "209 Emory Drive",
+          "squareFootage":500,
+          "HandicapAccessiblity": false 
+        },
+        {
+            "id": 3,
+            "name": "Nashville West",
+            "address": "127 White Oak Blvd",
+            "squareFootage":3000,
+            "HandicapAccessiblity": true 
+          },
+          {
+            "id": 4,
+            "name": "Nashville East",
+            "address": "40087 Maple Ln",
+            "squareFootage":7500,
+            "HandicapAccessiblity": true 
+          }
+        ]
+    }
