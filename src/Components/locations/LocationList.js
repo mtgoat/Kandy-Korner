@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from "react"
-import { LocationContext } from "./LocationDataProvider"
-import { LocationCard } from "./LocationCard"
-import "./Location.css"
+import React, { useContext, useEffect } from "react";
+import { LocationContext } from "./LocationDataProvider";
+import { LocationCard } from "./LocationCard";
+import "./Location.css";
 
 
 export const LocationList = () => {
