@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
-import { KandyKorner} from "./KandyKorner"
+import { KandyKorner} from "./KandyKorner";
 
 
 ReactDOM.render(
