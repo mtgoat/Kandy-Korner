@@ -71,23 +71,48 @@
         "employees": [
             {
                 "id": 1,
-                "name": "Jeremy Bakker",
-                "locationId": 2
+                "firstName": "Marie",
+                "lastName": "Curie",
+                "locationId": 2,
+                "manager":true,
+                "fullTime":true,
+                "hourlyRate": 50
               },
               {
                 "id": 2,
-                "name": "Jason Bourne",
-                "locationId": 3
+                "firstName": "Sally", 
+                "lastName": "Ride",
+                "locationId": 3,
+                "manager":false,
+                "fullTime":false,
+                "hourlyRate": 25
               },
               {
                 "id": 3,
-                "name": "Marie Curie",
-                "locationId": 1
+                "firstName": "Rosalind",
+                "lastName": "Franklin",
+                "locationId": 1,
+                "manager":true,
+                "fullTime":true,
+                "hourlyRate": 50
               },
               {
                 "id": 4,
-                "name": "Nikola Tesla",
-                "locationId": 4
+                "firstName": "Nikola",
+                "lastName": "Tesla",
+                "locationId": 4,
+                "manager":true,
+                "fullTime":false,
+                "hourlyRate": 50
+              },
+              {
+                "id": 5,
+                "firstName": "Vandana",
+                "lastName": "Shiva",
+                "locationId": 4,
+                "manager":false,
+                "fullTime":false,
+                "hourlyRate": 20
               }
         ],
         "productTypes": [
