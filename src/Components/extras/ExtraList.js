@@ -17,7 +17,7 @@ return (
     {console.log("ExtraList: Render", extras)}
     {
       extras.map(extra => {
-        return <ExtraCard key={extra.id} location={extra} />
+        return <ExtraCard key={extra.id} extra={extra} />
       })
     }
   </div> 

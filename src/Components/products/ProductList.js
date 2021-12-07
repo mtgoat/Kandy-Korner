@@ -17,7 +17,7 @@ return (
     {console.log("ProductList: Render", products)}
     {
       products.map(product => {
-        return <ProductCard key={product.id} location={product} />
+        return <ProductCard key={product.id} product={product} />
       })
     }
   </div> 

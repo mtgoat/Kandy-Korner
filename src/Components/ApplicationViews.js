@@ -6,7 +6,7 @@ import { LocationList } from "./locations/LocationList"
 import { ProductProvider } from "./products/ProductDataProvider"
 import { ProductList } from "./products/ProductList"
 
-import { ProductTypeProdivder} from "./"
+
 
 import { EmployeeProvider } from "./employees/EmployeeDataProvider"
 import { EmployeeList } from "./employees/EmployeeList"
@@ -20,7 +20,7 @@ import { ExtraList } from "./extras/ExtraList"
 
 export const ApplicationViews = () => {
     return (
-      <ProductTypeProdivder>
+      
       <ProductProvider>
         <EmployeeProvider>  
           <LocationProvider> 
@@ -37,7 +37,7 @@ export const ApplicationViews = () => {
             </LocationProvider>
           </EmployeeProvider>
          </ProductProvider>
-         </ProductTypeProdivder>
+         
     )
 }
 
