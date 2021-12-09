@@ -8,4 +8,6 @@ export const KandyKorner = () => (
     <NavBar />
     <ApplicationViews />
     </>
+
+    
 )
