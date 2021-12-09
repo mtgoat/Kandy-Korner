@@ -11,8 +11,8 @@ export const EmployeeForm = () => {
     const [employee, setEmployee] = useState ({
         firstName:"",
         lastName: "",
-        manager:  null,
-        fullTime: null,
+        manager:  false,
+        fullTime: false,
         hourlyRate: 0,
         locationId: 0
     });
@@ -24,15 +24,32 @@ export const EmployeeForm = () => {
         .then()
     }, [])
 
+    // const handleFirstNameInput = (event) => {
+    //     let copyOfState = {...employee}
+
+    //     copyOfState.firstName = event.target.value
+
+    //     setEmployee(copyOfState)
+    // }
+
+
     const handleControlledInputChange = (event) => {
 
         let newEmployee = { ...employee }
 
         newEmployee[event.target.id] = event.target.value
-
         setEmployee(newEmployee)
     }
 
+    const handleCheckBoxControlledInputChange = (event) => {
+
+        let newEmployee = { ...employee }
+
+        newEmployee[event.target.id] = event.target.checked
+
+        setEmployee(newEmployee)
+    }
+    
     const handeClickRegisterEmployee = (event) => {
         event.preventDefault()
 
@@ -84,10 +101,25 @@ return (
 
     <fieldset>
                 <div className="form-group">
-                    <input type="checkbox" id="manager" name="manager" value={employee.manager}></input>
-                    <label htmlfor="manager">Are you a manager?</label>
+                     <label htmlfor="manager">If you are a manager, please check the box here: </label>
+                     <input onChange={ handleCheckBoxControlledInputChange} type="checkbox" id="manager" name="manager" value={employee.manager}></input>
+                   
                 </div>
     </fieldset>
+    <fieldset>
+                <div className="form-group">
+                     <label htmlfor="fullTime">If you work full time, please check the box here: </label>
+                     <input onChange={ handleCheckBoxControlledInputChange} type="checkbox" id="fullTime" name="fullTime" value={employee.fullTime}></input>
+                </div>
+    </fieldset>
+
+    <fieldset>
+        <div className="form-group">
+            <label htmlFor="lastName">Current Hourly Rate:</label>
+            <input type="number" id="hourlyRate" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Employee Last Name" value={employee.hourlyRate}/>
+        </div>
+    </fieldset>
+
           <button className="btn btn-primary"
             onClick={handeClickRegisterEmployee}>
             Save New Employee Registration
