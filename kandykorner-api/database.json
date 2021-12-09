@@ -116,20 +116,11 @@
     {
       "firstName": "Panda",
       "lastName": "Bamboo",
-      "manager": false,
-      "fullTime": false,
-      "hourlyRate": 0,
-      "locationId": 1,
-      "id": 6
-    },
-    {
-      "firstName": "Panda",
-      "lastName": "Bamboo",
       "manager": true,
       "fullTime": true,
-      "hourlyRate": "4",
+      "hourlyRate": "20",
       "locationId": 1,
-      "id": 7
+      "id": 6
     }
   ],
   "productTypes": [

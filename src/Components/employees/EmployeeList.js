@@ -4,11 +4,11 @@ import { EmployeeCard } from "./EmployeeCard";
 import "./Employee.css";
 import { useNavigate } from "react-router-dom";
 
-const navigateE = useNavigate ()
 
 export const EmployeeList = () => {
     const { employees, getEmployees } =
     useContext(EmployeeContext)
+    const navigateE = useNavigate ()
 
     useEffect(() => {
         console.log("EmployeeList:useEffect - getEmployees")
