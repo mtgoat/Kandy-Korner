@@ -148,7 +148,9 @@
   "customers": [
     {
       "id": 1,
-      "firstName": "Aki"
+      "firstName": "Aki",
+      "lastName": "Endo",
+      "email": "panda@bamboo.com"
     }
   ],
   "extras": [
