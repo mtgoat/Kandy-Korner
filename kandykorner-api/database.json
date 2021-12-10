@@ -29,44 +29,6 @@
       "HandicapAccessiblity": true
     }
   ],
-  "products": [
-    {
-      "id": 1,
-      "name": "Caramel Pie Candy",
-      "productTypeId": 1,
-      "price": 1
-    },
-    {
-      "id": 2,
-      "name": "Chocolate Bar",
-      "productTypeId": 2,
-      "price": 3
-    },
-    {
-      "id": 3,
-      "name": "Gummy Bears",
-      "productTypeId": 3,
-      "price": 2
-    },
-    {
-      "id": 4,
-      "name": "Chocolate Ganashe",
-      "productTypeId": 2,
-      "price": 5
-    },
-    {
-      "id": 5,
-      "name": "Ribbon Gum",
-      "productTypeId": 4,
-      "price": 1
-    },
-    {
-      "id": 6,
-      "name": "Root Beer",
-      "productTypeId": 5,
-      "price": 7
-    }
-  ],
   "employees": [
     {
       "id": 1,
@@ -145,18 +107,114 @@
       "name": "Sodas"
     }
   ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Caramel Candy",
+      "productTypeId": 1,
+      "price": 1
+    },
+    {
+      "id": 2,
+      "name": "Chocolate Bar",
+      "productTypeId": 2,
+      "price": 3
+    },
+    {
+      "id": 3,
+      "name": "Gummy Bears",
+      "productTypeId": 3,
+      "price": 2
+    },
+    {
+      "id": 4,
+      "name": "Chocolate Ganashe",
+      "productTypeId": 2,
+      "price": 5
+    },
+    {
+      "id": 5,
+      "name": "Ribbon Gum",
+      "productTypeId": 4,
+      "price": 1
+    },
+    {
+      "id": 6,
+      "name": "Root Beer",
+      "productTypeId": 5,
+      "price": 7
+    }],
   "customers": [
     {
       "id": 1,
+      "firstName": "Charlie",
+      "lastName": "Bucket",
+      "email": "charlieB@johnaugust.com"
+    },
+    {
+      "id": 2,
       "firstName": "Aki",
       "lastName": "Endo",
       "email": "panda@bamboo.com"
+    },
+    {
+      "id": 3,
+      "firstName": "Willy",
+      "lastName": "Wonka",
+      "email": "willy@wonka.com"
+    }    
+  ],
+  "orderItems": [
+    {
+      "id":1, 
+      "productId":2, 
+      "quantity":3,
+      "orderId":1
+    },
+    {
+      "id":2, 
+      "productId":4, 
+      "quantity":1,
+      "orderId":2
+    },
+    {
+      "id":3, 
+      "productId":3, 
+      "quantity":6,
+      "orderId":2 
+    },
+    {
+      "id":4, 
+      "productId":5, 
+      "quantity":1,
+      "orderId":1 
+    },
+    {
+      "id":5, 
+      "productId":4, 
+      "quantity":1,
+      "orderId":3 
+    }
+    ],
+  "orders":[
+    {
+      "id": 1,
+      "customerId": 1
+    },
+    {
+      "id": 2,
+      "customerId": 2
+    },
+    {
+      "id": 3,
+      "customerId": 2
     }
   ],
   "extras": [
     {
       "id": 1,
-      "message": "You got extra bag of your choice"
+      "message": "You got extra bag of your choice",
+      "orderId": 3
     }
   ]
 }
