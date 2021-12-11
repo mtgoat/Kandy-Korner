@@ -24,7 +24,7 @@ export const OrderForm = () => {
        const navigate=useNavigate()
 
        useEffect (() => {
-            getProducts().then()
+            getProducts().then(getCustomers)
        }, [])
 
        const handleControlledInputChange = (event) => {
@@ -35,6 +35,7 @@ export const OrderForm = () => {
       //set the property to the new value
         newOrder[event.target.id]=event.target.value
       //update state
+      console.log("newoOrder handleControleEvent", newOrder)
         setOrder(newOrder)
        }
 
