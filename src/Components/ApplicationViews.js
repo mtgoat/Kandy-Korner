@@ -12,25 +12,25 @@ import { EmployeeList } from "./employees/EmployeeList";
 import { EmployeeForm } from "./employees/EmployeeForm";
 
 import { OrderProvider } from "./orders/OrderDataProvider";
-// import { OrderForm} from "./orders/OrderForm";
 import { OrderList } from "./orders/OrderList";
+import { OrderForm } from "./orders/OrderForm";
 
 import { ExtraProvider } from "./extras/ExtraDataProvider";
 import { ExtraList } from "./extras/ExtraList";
+import { CustomerProvider } from "./customers/CustomerDataProvider";
 
-import { OrderItemProvider } from "./orderItems/OrderItemDataProvider";
-// import { OrderItemForm } from "./orderItems/OrderItemForm";
 
 
 export const ApplicationViews = () => {
     return (
       
       <ProductProvider>
+        <CustomerProvider>
         <EmployeeProvider>  
           <LocationProvider>
             <OrderProvider>
-              <OrderItemProvider>
-                <ExtraProvider>
+              <ExtraProvider>
+                
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="locations/*" element={<LocationList />} />
@@ -38,14 +38,15 @@ export const ApplicationViews = () => {
                     <Route path="employees*" element={<EmployeeList />} />
                     <Route path="employees/create/*" element={<EmployeeForm />} />
                     <Route path="orders/*" element={<OrderList/>} />
-                    {/* <Route path="orders/create*" element={<><OrderForm /><OrderItemForm /></>} /> */}
+                    <Route path="orders/create/*" element={<OrderForm />}/>
                     <Route path="extras/*" element={<ExtraList />} />
                   </Routes>
-                </ExtraProvider>
-              </OrderItemProvider>
+                
+              </ExtraProvider>
             </OrderProvider> 
           </LocationProvider>
         </EmployeeProvider>
+        </CustomerProvider>
       </ProductProvider>
          
     )

@@ -22,3 +22,4 @@ export const ProductCard = ({product}) => {
     </section>
     )
     }
+

@@ -164,57 +164,19 @@
       "email": "willy@wonka.com"
     }    
   ],
-  "orderItems": [
-    {
-      "id":1, 
-      "productId":2, 
-      "quantity":3,
-      "orderId":1
-    },
-    {
-      "id":2, 
-      "productId":4, 
-      "quantity":1,
-      "orderId":2
-    },
-    {
-      "id":3, 
-      "productId":3, 
-      "quantity":6,
-      "orderId":2 
-    },
-    {
-      "id":4, 
-      "productId":5, 
-      "quantity":1,
-      "orderId":1 
-    },
-    {
-      "id":5, 
-      "productId":4, 
-      "quantity":1,
-      "orderId":3 
-    }
-    ],
-  "orders":[
+   "orders":[
     {
       "id": 1,
-      "customerId": 1
-    },
-    {
-      "id": 2,
-      "customerId": 2
-    },
-    {
-      "id": 3,
-      "customerId": 2
+      "customerId": 2,
+      "productId": 2,
+      "quantity": 1
     }
   ],
   "extras": [
     {
       "id": 1,
       "message": "You got extra bag of your choice",
-      "orderId": 3
+      "orderId": 1
     }
   ]
 }
