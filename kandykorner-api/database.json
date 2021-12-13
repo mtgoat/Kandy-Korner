@@ -143,7 +143,8 @@
       "name": "Root Beer",
       "productTypeId": 5,
       "price": 7
-    }],
+    }
+  ],
   "customers": [
     {
       "id": 1,
@@ -162,14 +163,38 @@
       "firstName": "Willy",
       "lastName": "Wonka",
       "email": "willy@wonka.com"
-    }    
+    }
   ],
-   "orders":[
+  "orders": [
     {
       "id": 1,
       "customerId": 2,
       "productId": 2,
       "quantity": 1
+    },
+    {
+      "customerId": 2,
+      "productId": 6,
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "customerId": 2,
+      "productId": 3,
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "customerId": 2,
+      "productId": 1,
+      "quantity": 1,
+      "id": 4
+    },
+    {
+      "customerId": 2,
+      "productId": 1,
+      "quantity": 1,
+      "id": 5
     }
   ],
   "extras": [

@@ -13,7 +13,7 @@ import { EmployeeForm } from "./employees/EmployeeForm";
 
 import { OrderProvider } from "./orders/OrderDataProvider";
 import { OrderList } from "./orders/OrderList";
-import { OrderForm } from "./orders/OrderForm";
+// import { OrderForm } from "./orders/OrderForm";
 
 import { ExtraProvider } from "./extras/ExtraDataProvider";
 import { ExtraList } from "./extras/ExtraList";
@@ -38,7 +38,7 @@ export const ApplicationViews = () => {
                     <Route path="employees*" element={<EmployeeList />} />
                     <Route path="employees/create/*" element={<EmployeeForm />} />
                     <Route path="orders/*" element={<OrderList/>} />
-                    <Route path="orders/create/*" element={<OrderForm />}/>
+                    <Route path="orders/create/*" element={<OrderList />}/>
                     <Route path="extras/*" element={<ExtraList />} />
                   </Routes>
                 
