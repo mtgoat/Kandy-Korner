@@ -2,6 +2,7 @@ import React, { useState, createContext} from "react";
 
 export const ProductContext = createContext()
 
+
 export const ProductProvider = (props) => {
 
     const [products, setProducts] = useState([])
