@@ -4,8 +4,7 @@ import { OrderContext } from "./OrderDataProvider";
 import { useNavigate, useParams } from "react-router-dom"
 import { ProductContext } from "../products/ProductDataProvider";
 import { CustomerContext} from "../customers/CustomerDataProvider";
-
-export 
+ 
 
 export const OrderForm = () => {
     //    const { addOrder } = useContext(OrderContext)
